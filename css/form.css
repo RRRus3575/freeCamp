@@ -20,7 +20,7 @@ a {
   position: absolute;
   left: 10px;
   top: 5px;
-  color: inherit;
+  color: var(--color-white);
   text-decoration: none;
 }
 a:hover {
