@@ -17,7 +17,7 @@ body {
   margin: 0;
 }
 a {
-  position: absolute;
+  position: fixed;
   left: 10px;
   top: 5px;
   color: var(--color-white);
