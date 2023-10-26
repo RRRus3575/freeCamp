@@ -1,0 +1,140 @@
+:root {
+  --color-white: #f3f3f3;
+  --color-darkblue: #1b1b32;
+  --color-darkblue-alpha: rgba(27, 27, 50, 0.8);
+  --color-green: #37af65;
+}
+img {
+  max-width: 100%;
+  display: block;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.4;
+  color: var(--color-white);
+  margin: 0;
+}
+body::before {
+  content: "";
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  background-image: linear-gradient(
+      115deg,
+      rgba(58, 58, 158, 0.8),
+      rgba(136, 136, 206, 0.7)
+    ),
+    url(https://cdn.freecodecamp.org/testable-projects-fcc/images/survey-form-background.jpeg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.container {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+header {
+  margin-bottom: 30px;
+}
+header,
+.description {
+  text-align: center;
+}
+h1 {
+  font-weight: 400;
+  line-height: 1.2;
+  margin-bottom: 0.5rem;
+}
+.description {
+  font-style: italic;
+  font-weight: 200;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
+}
+form {
+  padding: 30px 15px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.25rem;
+
+  background: var(--color-darkblue-alpha);
+
+  border-radius: 10px;
+}
+label {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  width: 100%;
+}
+
+#nav-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  display: flex;
+  gap: 30px;
+}
+
+#navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  display: flex;
+  gap: 30px;
+}
+.text-input,
+select,
+textarea {
+  border-radius: 5px;
+  height: 30px;
+  padding: 5px;
+}
+textarea {
+  height: 100px;
+  resize: none;
+}
+.label-radio {
+  display: flex;
+  justify-content: space-between;
+}
+.radio-block {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+button {
+  width: 100%;
+  height: 50px;
+  border-radius: 5px;
+  background-color: var(--color-green);
+  color: var(--color-white);
+  border: none;
+}
+button:hover {
+  background-color: #2e6b45;
+}
+
+@media (max-width: 749px) {
+  .container {
+    max-width: 480px;
+  }
+}
+@media (min-width: 750px) {
+  .container {
+    max-width: 600px;
+  }
+  form {
+    padding: 50px 60px;
+  }
+}
