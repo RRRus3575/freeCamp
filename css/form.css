@@ -16,7 +16,7 @@ body {
   color: var(--color-white);
   margin: 0;
 }
-a {
+.home {
   display: block;
   position: fixed;
   left: 10px;
@@ -24,7 +24,7 @@ a {
   color: var(--color-white);
   text-decoration: none;
 }
-a:hover {
+.home:hover {
   text-decoration: underline;
   font-size: 18px;
 }
